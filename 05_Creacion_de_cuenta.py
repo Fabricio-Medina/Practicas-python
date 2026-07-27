@@ -8,6 +8,7 @@ nombreUsuario = input ("Introduce un nombre de usuario: ")
 contraseña = input ("Crea una contraseña (puede contener letras y numeros): ")
 if nombreUsuario == contraseña:
     print ("Usuario y contraseña no pueden ser iguales")
+    elif edad == 18 or edad > 18:
     opcion_1 = input ("\n Tu cuenta sera para adultos o empresarial?: ")
     opcion_1 = opcion_1.lower()
     if opcion_1 == 'adultos':
