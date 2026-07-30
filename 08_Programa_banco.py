@@ -15,13 +15,11 @@ if opcion == 1:
     print ("Su saldo actual es: ", saldo)
 elif opcion == 2:
     deposito = float (input ("Cuanto dinero deseas depositar: "))
-    if deposito > saldo:
-        print ("Cantidad invalida.")
-    if deposito < saldo:
-        saldo += deposito
-        print ("Tu saldo actual es: ", saldo) 
-    elif deposito <= 0:
+    if deposito <= 0:
         print ("No se puede depositar esta cantidad")
+    saldo += deposito
+    print ("Tu saldo actual es: ", saldo) 
+    
 elif opcion == 3:
     retiro = float (input ("Cuanto dinero desea retirar: "))
     if retiro == saldo:
@@ -32,9 +30,8 @@ elif opcion == 3:
             print ("Su saldo actual es: ", saldo)
         elif pregunta == "no":
             print ("Gracias por preferir nuestros servicios.")
-    elif saldo <= retiro:
-        saldo -= retiro
-        print ("Su saldo actual es: ", saldo )
+    saldo -= retiro
+    print ("Su saldo actual es: ", saldo )
     
 elif opcion == 4:
     print ("Gracias por preferir nuestros servicios ", nombre, "hasta pronto.")
@@ -58,13 +55,10 @@ while repetir == "si":
         print ("Su saldo actual es: ", saldo)
     elif opcion == 2:
         deposito = float (input ("Cuanto dinero deseas depositar: "))
-        if deposito > saldo:
-            print ("Cantidad invalida.")
-        if deposito < saldo:
-            saldo += deposito
-            print ("Tu saldo actual es 222: ", saldo) 
-        elif deposito <= 0:
+        if deposito <= 0:
             print ("No se puede depositar esta cantidad")
+        saldo += deposito
+        print ("Tu saldo actual es: ", saldo)
     elif opcion == 3:
         retiro = float (input ("Cuanto dinero desea retirar: "))
         if retiro == saldo:
@@ -75,9 +69,8 @@ while repetir == "si":
                 print ("Su saldo actual es: ", saldo)
             elif pregunta == "no":
                 print ("Gracias por preferir nuestros servicios.")
-        elif saldo <= retiro:
-            saldo -= retiro
-            print ("Su saldo actual es: ", saldo )
+        saldo -= retiro
+        print ("Su saldo actual es: ", saldo )
     
     elif opcion == 4:
         print ("Gracias por preferir nuestros servicios ", nombre, "hasta pronto.")
